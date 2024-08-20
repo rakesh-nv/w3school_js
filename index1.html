@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>addition of 5 and 6</p>
+    <p id="demo"></p>
+    <hr>
+
+    <script>
+        document.getElementById('demo').innerHTML = 5 + 6;
+        document.write("sum of 5 and 6 : ", 5 + 6)
+
+        function myFunction() {
+            document.getElementById('demo1').innerHTML = 10 + 10;
+        }
+        // alert(5+6)
+        function myFunction1() {
+            document.getElementById('demo3').innerHTML = "Hello Rakesh"
+            document.getElementById('demo4').innerHTML = "How are you?"
+        }
+        function myFunction2() {
+            let firstName, lastName;
+            firstName = "N V";
+            lastName = "RAKESH";
+            document.getElementById('demo5').innerHTML = firstName + " " + lastName;
+        }
+
+    </script>
+
+    <hr>
+    <p>sum of 10 and 10</p>
+    <p id="demo1"></p>
+    <button type="button" onclick="myFunction()">try it</button>
+    <hr>
+    <button type="button" onclick="window.print()">print the page</button>
+    <hr>
+
+    <p>this is calculated from external js</p>
+    <p id="demo2"></p>
+    <hr>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <button type="button" onclick="myFunction1()">click me</button>
+    <hr>
+
+    <p id="demo5"></p>
+    <button type="button" onclick="myFunction2()">click me</button>
+    <hr>
+
+
+
+    <p>var and let decleration</p>
+    <p id="demo6"></p>
+    <button type="button" onclick="myfunction()">click me</button>
+
+    
+    <script>
+        function myfunction() {
+            try {
+                var carName = "Saab";
+                //let carName = "Volvo";
+                document.getElementById('demo6').innerHTML = carName;
+            }
+            catch (err) {
+                document.getElementById("demo6").innerHTML = err;
+            }
+        }
+    </script>
+
+    <hr>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

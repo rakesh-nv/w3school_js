@@ -9,3 +9,5 @@ function person(first,last,age,eye){
 const myFather = new person("john","Doe",50,"blue");
 
 document.getElementById('demo').innerHTML="my father is "+ myFather.age +".";
+
+//console.log(myFather.age);

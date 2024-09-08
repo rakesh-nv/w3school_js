@@ -29,3 +29,5 @@ for (let [fruit, amount] of Object.entries(fruits)) {
     text += "<br>" + fruit + " : " + amount;
 }
 document.getElementById('demo2').innerHTML = text;
+
+document.getElementById('demo3').innerHTML=JSON.stringify(person);

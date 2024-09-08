@@ -18,10 +18,24 @@
     <h2>The Object.entries() Method</h2>
     <p id="demo2"></p>
     <hr>
+    <h2>Display Propertis with JAON.stringy(),convert Object to string</h2>
+    <p id="demo3"></p>
+    <hr>
+    <h2>Javascript Object Constructer</h2>
+    <p id="demo4"></p>
+    <hr>
+    <script>
+        function man(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        const myFather = new man("john", "Doe", 50, "blue");
 
-
-
-
+        //Display age
+        document.getElementById('demo4').innerHTML = "My fathis age is :" +myFather.age+".";
+    </script>
 
 
 
